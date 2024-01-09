@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listadoCoctelesInicial">
+
+    <fragment
+        android:id="@+id/detalleCoctelFragment"
+        android:name="com.estech.cocktailapp.fragments.DetalleCoctelFragment"
+        android:label="DetalleCoctelFragment" />
+    <fragment
+        android:id="@+id/listadoCoctelesInicial"
+        android:name="com.estech.cocktailapp.fragments.ListadoCoctelesInicial"
+        android:label="Listado de Cócteles">
+        <action
+            android:id="@+id/action_listadoCoctelesInicial_to_detalleCoctelFragment"
+            app:destination="@id/detalleCoctelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaIngrediente"
+        android:name="com.estech.cocktailapp.fragments.ListaIngrediente"
+        android:label="Búsqueda por Ingrediente">
+        <action
+            android:id="@+id/action_listaIngrediente_to_detalleCoctelFragment"
+            app:destination="@id/detalleCoctelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaVasos"
+        android:name="com.estech.cocktailapp.fragments.ListaVasos"
+        android:label="Búsqueda por Tipo de Vaso">
+        <action
+            android:id="@+id/action_listaVasos_to_detalleCoctelFragment"
+            app:destination="@id/detalleCoctelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomCoctelFragment"
+        android:name="com.estech.cocktailapp.fragments.RandomCoctelFragment"
+        android:label="RandomCoctelFragment" />
+    <fragment
+        android:id="@+id/listaCategoria"
+        android:name="com.estech.cocktailapp.fragments.ListaCategoria"
+        android:label="Búsqueda por Categoría">
+        <action
+            android:id="@+id/action_listaCategoria_to_detalleCoctelFragment"
+            app:destination="@id/detalleCoctelFragment" />
+    </fragment>
+</navigation>

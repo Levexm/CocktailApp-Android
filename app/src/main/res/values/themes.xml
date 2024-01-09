@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.CocktailApp" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Theme.CocktailApp" parent="Base.Theme.CocktailApp" />
+
+</resources>

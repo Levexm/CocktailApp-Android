@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/listadoCoctelesInicial"
+        android:icon="@drawable/home_icon"
+        android:title="Inicio" />
+    <item android:title="Busquedas">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/listaIngrediente"
+                    android:icon="@drawable/baseline_local_drink_24"
+                    android:title="Por Ingrediente" />
+                <item
+                    android:id="@+id/listaVasos"
+                    android:icon="@drawable/baseline_local_bar_24"
+                    android:title="Por tipo de vaso" />
+                <item
+                    android:id="@+id/listaCategoria"
+                    android:icon="@drawable/baseline_category_24"
+                    android:title="Por Categoría" />
+                <item
+                    android:id="@+id/randomCoctelFragment"
+                    android:icon="@drawable/baseline_question_mark_24"
+                    android:title="Cóctel aleatorio" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
